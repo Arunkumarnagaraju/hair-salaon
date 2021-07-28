@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Reva Barbar Shop</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <section id="banner">
+     <img src="Images/logo.png" alt="logo" class="logo">  
+     <div class="banner-text"> 
+         <h1>Hair Studio</h1>
+         <p>Style Your Hair Is Style Your Life</p>
+         <div class="banner-btn">
+             <a href="#"><span></span> Find Out</a>
+             <a href="#"><span></span> Read More</a>
+         </div>
+     </div> 
+
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="Images/menu.png" alt="menuBtn" id="menu">
+    </div>
+    <!--Features-->
+    <section id="features">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff </h1><br><br>
+                <h1>Cost Affordable</h1><br><br>
+                <h1>Online Booking</h1>
+                <div class="feature-desc"></div>
+            </div>
+            <div class="feature-img">
+                <img src="Images/barber-man.jpg" alt="barber-man">
+            </div>
+        </div>
+    </section>
+    <!--Services-->
+    <section id="service">
+            <div class="title-text">
+                <p>SERVICES</p>
+                <h1>We Provide Better</h1>
+            </div>
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="Images/pic-1.jpg" alt="Service pic-1">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Hair Styling</h3>
+                        <hr>
+                        <p>We will provide best in class Hair Styling</p>
+
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic-2.jpg" alt="service pic-2">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Beard Trim</h3>
+                        <hr>
+                        <p>We will provide best in class Beard trimming</p>
+
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic-3.jpg" alt="service pic-3">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Hair Cut</h3>
+                        <hr>
+                        <p>We will provide best in class Hair cutting</p>
+
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic-4.jpg" alt="service pic-4">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Dry shampoo</h3>
+                        <hr>
+                        <p>We will provide best in class Dry shampoo washing</p>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!--footer-->
+    <section id="footer">
+        <div class="title-text">
+            <p>CONTACT US</p>
+            <h1>Visit Our Shop Today</h1>
+        </div>
+        <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i> Monday to Friday - 9AM to 9PM</p>
+            <p> <i class="fa fa-clock-o"></i>Saturday and Sunday - 8AM to 11PM</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get in Touch</h1>
+            <p>#32, EDF Layout, SDE City, BNG<i class="fa fa-map-marker"></i></p>
+            <p>Info@barbar.com<i class="fa fa-paper-plane"></i></p>
+            <p>+91 1234567890<i class="fa fa-phone"></i></p>
+        </div>
+        </div>
+        <div class="social-links"> 
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <p>&copy; 2021. All Rigts are Reserved</p>
+        </div>
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        sidenav.style.right = "-250px"
+        menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "Images/close.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "Images/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 1000,
+	    speedAsDuration: true
+});
+    </script>
+</body>
+</html>
